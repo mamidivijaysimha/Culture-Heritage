@@ -1,0 +1,77 @@
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(210, 15%, 92%);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.subTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #34495e;
+    text-transform: capitalize;
+}
+
+.carousel {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 800px; /* Fixed width for the carousel */
+    height: 400px; /* Fixed height for the carousel */
+    margin: 0 auto; /* Center align the carousel */
+    position: relative; /* Required for inner controls */
+}
+
+.carousel .carouselImg {
+    width: 100%; /* Image will match carousel's width */
+    height: 100%; /* Image will match carousel's height */
+    object-fit: cover; /* Ensures the image fits without distortion */
+    border-radius: 10px;
+}
+
+.list-group-item {
+    font-size: 1.25rem;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #dfe6e9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.alert-danger {
+    font-size: 1.2rem;
+    color: #c0392b;
+    background-color: #fdecea;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+.tourist-section {
+    margin-top: 40px;
+}
+
+.text-center {
+    text-align: center;
+}

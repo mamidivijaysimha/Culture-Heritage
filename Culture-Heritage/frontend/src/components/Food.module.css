@@ -1,0 +1,69 @@
+/* Title styling */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(210, 100%, 99%); /* Bootstrap primary color */
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+/* Subtitle styling */
+.subTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #a77b28; /* Bootstrap success color */
+    text-transform: capitalize;
+}
+
+/* Centered carousel styling */
+.carouselContainer {
+    margin: 20px auto;
+    max-width: 100%; /* Adjust to fit the container width */
+    overflow: hidden; /* Prevents overflow */
+    position: relative;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Carousel container styling */
+.carousel {
+    width: 100%; /* Makes the carousel span the full width */
+    height: 400px; /* Adjust height of the carousel */
+    margin: 0 auto; /* Centers the carousel */
+    overflow: hidden; /* Prevent overflow */
+    position: relative;
+}
+
+/* Image styling within the carousel */
+.carouselImg {
+    width: 100%; /* Ensures image spans full width of the carousel */
+    height: 100%; /* Ensures image spans full height of the carousel */
+    object-fit: cover; /* Maintains aspect ratio and fills the container */
+    object-position: center; /* Ensures the image is centered */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Carousel control icon styling to disable hover color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Ensure transparency */
+    filter: none; /* Remove any filters */
+    opacity: 1; /* Ensure visibility */
+}
+
+/* Remove hover effects on the carousel control icons */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: transparent; /* Disable background color on hover */
+    filter: none; /* No hover effects */
+    opacity: 1; /* No dimming on hover */
+}
+
+/* Styling for the carousel controls (arrows) to avoid hover background */
+.carousel-control-prev,
+.carousel-control-next {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent !important; /* Prevent green background on hover */
+    border: none !important; /* No border effects */
+}
+

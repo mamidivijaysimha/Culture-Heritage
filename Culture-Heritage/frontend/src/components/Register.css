@@ -1,0 +1,72 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Soft gradient background */
+}
+
+.register-form {
+  background-color: #ffffff; /* White background for form */
+  padding: 40px; /* Increased padding */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  width: 400px; /* Fixed width */
+  text-align: center; /* Centered text */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.register-form:hover {
+  transform: scale(1.03); /* Slightly enlarge on hover */
+}
+
+h2 {
+  margin-bottom: 20px; /* Spacing below header */
+  color: #d66c69; /* Soft color for header */
+  font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+  font-weight: bold;
+  color: #555; /* Darker text color for labels */
+  font-size: 16px; /* Increased font size for readability */
+}
+
+input {
+  width: 100%; /* Full width for inputs */
+  padding: 12px; /* Increased padding for inputs */
+  border: 2px solid #d66c69; /* Border color matching the theme */
+  border-radius: 10px; /* Rounded borders for inputs */
+  transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input:focus {
+  border-color: #ffc3a0; /* Lighter border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.register-button {
+  width: 100%; /* Full width for button */
+  padding: 12px; /* Increased padding for button */
+  background-color: #d66c69; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded button */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px; /* Increased font size for button */
+  transition: background-color 0.3s; /* Smooth button hover effect */
+}
+
+.register-button:hover {
+  background-color: #ffc3a0; /* Lighter shade on hover */
+}
+
+p.error-message {
+  margin-top: 15px; /* Increased margin for paragraph */
+  color: #d66c69; /* Error color */
+}

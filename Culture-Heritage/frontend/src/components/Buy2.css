@@ -1,0 +1,120 @@
+.b-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+  }
+  
+  .p-details {
+    display: flex;
+    background-color: #fff; /* White background for product details */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .p-image {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px; /* Rounded corners for the image */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .p-info {
+    padding-left: 20px;
+    flex-grow: 1; /* Allow info section to grow */
+  }
+  
+  .p-info h1 {
+    font-size: 24px;
+    color: #333; /* Dark color for product name */
+    margin-bottom: 10px;
+  }
+  
+  .p-info p {
+    margin: 5px 0;
+    color: #555; /* Grey color for other details */
+  }
+  
+  .p-info button {
+    background-color: #28a745; /* Green button for confirmation */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .p-info button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .s-products {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of cards */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 20px; /* Space between similar product cards */
+    padding: 20px 0; /* Top and bottom padding */
+  }
+  
+  .s-product {
+    background-color: #fff; /* White background for similar products */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+    padding: 15px;
+    text-align: center;
+    flex: 0 0 200px; /* Fixed width for similar product cards */
+    transition: transform 0.3s; /* Animation on hover */
+  }
+  
+  .s-product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .s-product img {
+    width: 100%; /* Full width for images */
+    height: 150px; /* Fixed height for images */
+    border-radius: 8px; /* Rounded corners for the image */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .s-product p {
+    margin: 10px 0;
+    color: #333; /* Dark color for text */
+  }
+  
+  .s-product button {
+    background-color: #007bff; /* Blue button for buying */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .s-product button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .s-product {
+      flex: 0 0 150px; /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .s-products {
+      padding: 10px 0; /* Reduce padding on mobile */
+    }
+  
+    .s-product {
+      flex: 0 0 120px; /* Further adjust width for mobile */
+    }
+  }
+  

@@ -1,0 +1,107 @@
+/* General container styling */
+.uploadStateContainer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px; /* Set a max width to prevent the form from becoming too wide */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Title styling */
+.title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.label {
+    font-size: 1rem;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+/* Input fields and textareas */
+.inputField,
+.textareaField,
+.sectionTextarea,
+.fileInput {
+    padding: 12px;
+    width: 100%; /* Ensures full width */
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+/* Specific height for textareas */
+.textareaField,
+.sectionTextarea {
+    height: 120px; /* Set a fixed height for textareas */
+}
+
+/* Styling for the submit button and other buttons */
+.submitButton,
+.addMoreButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width for buttons */
+    margin-top: 20px;
+}
+
+/* Hover effects for buttons */
+.submitButton:hover,
+.addMoreButton:hover {
+    background-color: #45a049;
+}
+
+/* Message styling */
+.message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #4CAF50;
+}
+
+/* Section Input Container */
+.sectionInputContainer {
+    margin-top: 20px;
+}
+
+/* Section titles */
+.sectionTitle {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Margin between sections */
+.sectionInput {
+    margin-bottom: 10px;
+}
+
+/* Styling for file input */
+.fileInput {
+    padding: 8px;
+    width: 100%;
+}
+
+/* Additional button (Add More) */
+.addMoreButton {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.addMoreButton:hover {
+    background-color: #007B9E;
+}

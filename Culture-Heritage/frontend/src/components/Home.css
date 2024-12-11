@@ -1,0 +1,169 @@
+/* Home page container */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Sticky Header */
+.header {
+  position: sticky; /* Make header sticky */
+  top: 0; /* Stick to the top */
+  z-index: 10; /* Ensure it stays above other content */
+  background-color: #2c3e50;
+  padding: 20px 40px;
+  color: white;
+  border-bottom: 3px solid #2980b9;
+}
+
+/* Navigation styles */
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  background-color: #2980b9;
+  border-radius: 5px;
+}
+
+/* Welcome message */
+.welcome-message {
+  text-align: center;
+  margin: 40px 0;
+  color: #2c3e50;
+}
+
+.welcome-message h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.welcome-message p {
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+/* Product grid layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Fixed size for product card */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 480px; /* Decreased height for the card */
+  width: 250px; /* Fixed width for the card */
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+/* Image styling */
+.product-image {
+  max-width: 100%; /* Responsive width */
+  max-height: 200px; /* Fixed max height for images */
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 15px; /* Space between image and details */
+}
+
+/* Product details styling */
+.product-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Stack details vertically */
+  justify-content: flex-start; /* Start alignment */
+}
+
+.product-name {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.product-type {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  color: #2980b9;
+  margin-bottom: 5px;
+}
+
+.product-quantity {
+  font-size: 1.1rem;
+  color: #95a5a6;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: 10px; /* Space between the product details and buttons */
+  align-items: center; /* Center buttons horizontally */
+}
+
+/* Button styling for both Add to Cart and Buy */
+.buy-button,
+.buy-link-button {
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  padding: 12px 20px; /* Equal padding for both buttons */
+  background-color: #007bff; /* Same background for both */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.2rem; /* Same font size */
+  cursor: pointer;
+  margin: 5px 0; /* Space between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  width: 100%; /* Make buttons take full width of the container */
+}
+
+/* Hover effect for both buttons */
+.buy-button:hover,
+.buy-link-button:hover {
+  background-color: #1f78b4; /* Darker shade on hover for Add to Cart button */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Buy link button specific hover color */
+.buy-link-button:hover {
+  background-color: #007bff; /* Darker blue on hover for Buy link button */
+}
+
+/* Additional tweaks for product card */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 460px; /* Decreased height for the card */
+  width: 250px; /* Fixed width for the card */
+  overflow: hidden; /* Prevent overflow of content */
+}

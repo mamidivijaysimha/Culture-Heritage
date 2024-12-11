@@ -1,0 +1,248 @@
+.container {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../image/homepage.jpg'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    margin-right: 10px;
+}
+
+
+.searchButton {
+    background-color: #ff6f00; /* Original orange color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Add transitions */
+}
+
+/* Hover effect for enhanced visibility */
+.searchButton:hover {
+    background-color: #ff8c1a; /* Lighter orange on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 0 15px rgba(255, 111, 0, 0.6); /* Glowing orange shadow */
+    border: 2px solid #ffffff; /* Add white border */
+}
+
+/* Optional: Active state when the button is clicked */
+.searchButton:active {
+    background-color: #e65c00; /* Darker orange when pressed */
+    transform: scale(1); /* Reset scale */
+}
+
+/* Focus style for accessibility */
+.searchButton:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* White shadow for focus */
+}
+
+
+.navLinks {
+    display: flex;
+    gap: 15px;
+}
+
+/* Base button style 
+.navButton {
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}*/
+.nav-btn {
+    padding: 10px 20px;
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF; /* Unified blue color */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease, border 0.3s ease;
+  }
+  
+  /* Hover Effect for Additional Features */
+  .nav-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly increase the button size */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add a shadow for a highlighted effect */
+    color: #fff; /* Ensure the text stays white */
+    border-color: #ffffff; /* Add a white border on hover */
+    text-decoration: underline; /* Underline text on hover for extra emphasis */
+  }
+  
+  /* Optional: Focus style for accessibility */
+  
+ /*Specific button styles */
+/* Base button style */
+.navButton {
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #0056b3; /* Default dark blue background */
+}
+
+/* Hover effect for enhanced visibility */
+.navButton:hover {
+    background-color: #007BFF; /* Lighter blue */
+    color: #ffffff; /* Ensure text stays white */
+    transform: scale(1.08); /* Slightly enlarge button */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Add glowing blue shadow */
+    border: 2px solid #ffffff; /* Add a white border on hover */
+    text-decoration: underline; /* Underline text for emphasis */
+}
+
+/* Optional: Add active state for better user interaction */
+.navButton:active {
+    background-color: #003d80; /* Darker blue when clicked */
+    transform: scale(1); /* Reset to normal size */
+}
+
+/* Focus style for accessibility */
+.navButton:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* White shadow for focus state */
+}
+
+.mapButton {
+    background-color: #0056b3; /* Blue */
+}
+
+.mapButton:hover {
+    background-color: #0056b3;
+}
+
+.ecommerceButton {
+    background-color: #0056b3; /* Orange */
+}
+
+.ecommerceButton:hover {
+    background-color: #0056b3;
+}
+
+.helpButton {
+    background-color: #0056b3; /* Green */
+}
+
+.helpButton:hover {
+    background-color: #0056b3;
+}
+
+
+.navButton:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Styles */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    height: 100vh; /* Take full viewport height */
+    width: 100%;
+}
+
+.headerText {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+/* Main Content Styles */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    align-items: center; /* Center horizontally */
+    height: calc(100vh - 80px); /* Full viewport height minus navbar height */
+    width: 100%;
+    margin-top: 80px; /* Offset for the navbar height */
+    padding-bottom: 20px; /* Add padding at the bottom for spacing */
+}
+
+/* Darker Description Box */
+.descriptionBox {
+    background-color: rgba(0, 0, 0, 0.6); /* Increased opacity for a darker background */
+    padding: 40px;
+    margin: 0 auto; /* Remove the top margin */
+    max-width: 1200px;
+    width: 95%;
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional: Add shadow for depth */
+}
+
+/* Adjusted Text Style */
+.description {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #ffffff; /* Bright white text for high contrast */
+    text-align: justify;
+}
+
+.description p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #ffffff; /* Bright white text for high contrast */
+    text-align: justify;
+}
+
+
+  
